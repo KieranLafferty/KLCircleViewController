@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <KLCircleViewController/KLCircleViewController.h>
 @interface KLViewController : UIViewController
-
+@property (nonatomic, strong) KLCircleViewController* circleVC;
 @end
