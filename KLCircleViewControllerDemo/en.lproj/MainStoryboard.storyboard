@@ -11,13 +11,110 @@
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKx-iy-uc2">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="7jH-3c-h0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressLeftButton:" destination="2" eventType="touchUpInside" id="cmt-By-9R6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ym-88-OmC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="9TC-EO-JxP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Center">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressCenter:" destination="2" eventType="touchUpInside" id="kA6-zg-vBH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zv-fa-FGg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="jdU-uC-AAd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressRightButton:" destination="2" eventType="touchUpInside" id="PjZ-bZ-qCu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7F-kG-GnX">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Down">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressDownButton:" destination="2" eventType="touchUpInside" id="uy7-Ex-iIf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C7F-kG-GnX" firstAttribute="top" secondItem="3ym-88-OmC" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2uB-9T-WqE"/>
+                            <constraint firstAttribute="bottom" secondItem="C7F-kG-GnX" secondAttribute="bottom" constant="6" id="90T-Hk-dDL"/>
+                            <constraint firstAttribute="trailing" secondItem="9Zv-fa-FGg" secondAttribute="trailing" constant="44" id="Gl2-pf-4tL"/>
+                            <constraint firstItem="C7F-kG-GnX" firstAttribute="leading" secondItem="3ym-88-OmC" secondAttribute="leading" type="default" id="Kwn-ck-IFT"/>
+                            <constraint firstItem="3ym-88-OmC" firstAttribute="baseline" secondItem="dKx-iy-uc2" secondAttribute="baseline" type="default" id="NER-9N-CXk"/>
+                            <constraint firstItem="C7F-kG-GnX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="126" id="deG-yf-7Ch"/>
+                            <constraint firstItem="9Zv-fa-FGg" firstAttribute="baseline" secondItem="3ym-88-OmC" secondAttribute="baseline" type="default" id="jNm-bR-ruv"/>
+                            <constraint firstItem="C7F-kG-GnX" firstAttribute="trailing" secondItem="3ym-88-OmC" secondAttribute="trailing" type="default" id="sVi-CO-XBO"/>
+                            <constraint firstItem="3ym-88-OmC" firstAttribute="leading" secondItem="dKx-iy-uc2" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="yD9-RJ-LTr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="centerButton" destination="3ym-88-OmC" id="pO0-Kr-iwT"/>
+                        <outlet property="leftButton" destination="dKx-iy-uc2" id="EMT-Sk-bJ0"/>
+                        <outlet property="rightButton" destination="9Zv-fa-FGg" id="JlM-Ox-yvQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="KLViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KLViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="didPressCenter:"/>
+                <relationship kind="action" name="didPressDownButton:"/>
+                <relationship kind="action" name="didPressLeftButton:"/>
+                <relationship kind="action" name="didPressRightButton:"/>
+                <relationship kind="outlet" name="centerButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="downButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="leftButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="rightButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
