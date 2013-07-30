@@ -47,7 +47,7 @@
     [bottom.view setBackgroundColor: [UIColor purpleColor]];
     
     self.circleVC = [[KLCircleViewController alloc] initWithCenterViewController: center
-                                                              leftViewController: nil
+                                                              leftViewController: left
                                                              rightViewController: right
                                                                topViewController: nil
                                                             bottomViewController: bottom];
