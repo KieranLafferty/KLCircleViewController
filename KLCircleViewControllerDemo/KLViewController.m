@@ -51,7 +51,7 @@
                                                              rightViewController: right
                                                                topViewController: nil
                                                             bottomViewController: bottom];
-    
+
     [self.circleVC.view setFrame: self.view.bounds];
     [self.view insertSubview: self.circleVC.view
                 belowSubview: self.leftButton];
