@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     UIViewController* center = [[UIViewController alloc] init];
     [center.view setBackgroundColor: [UIColor whiteColor]];
@@ -32,19 +33,37 @@
     [centerLayer setShadowPath: [[UIBezierPath
                                   bezierPathWithRect: centerLayer.bounds] CGPath]];
     
+    
     UIViewController* left = [[UIViewController alloc] init];
+    
+    CGRect leftFrame = left.view.frame;
+    leftFrame.origin.y = 10;
+    leftFrame.size.height -= 2 * 10;
+    [left.view setFrame: leftFrame];
+    
     [left.view setBackgroundColor: [UIColor whiteColor]];
     CALayer* leftLayer =  left.view.layer;
     leftLayer.cornerRadius = 10.0;
     
     
     UIViewController* right = [[UIViewController alloc] init];
+    
+    CGRect rightFrame = right.view.frame;
+    rightFrame.origin.y = 10;
+    rightFrame.size.height -= 2 * 10;
+    [right.view setFrame: rightFrame];
+    
     [right.view setBackgroundColor: [UIColor whiteColor]];
     CALayer* rightLayer =  right.view.layer;
     rightLayer.cornerRadius = 10.0;
     
     UIViewController* bottom = [[UIViewController alloc] init];
-    [bottom.view setBackgroundColor: [UIColor purpleColor]];
+    CGRect bottomFrame = bottom.view.frame;
+    bottomFrame.origin.x = 10;
+    bottomFrame.size.width -= 2 * 10;
+    [bottom.view setFrame: bottomFrame];
+    
+    [bottom.view setBackgroundColor: [UIColor lightGrayColor]];
     
     self.circleVC = [[KLCircleViewController alloc] initWithCenterViewController: center
                                                               leftViewController: left
@@ -55,11 +74,6 @@
     [self.circleVC.view setFrame: self.view.bounds];
     [self.view insertSubview: self.circleVC.view
                 belowSubview: self.leftButton];
-}
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)didPressCenter:(id)sender {
