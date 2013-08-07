@@ -223,7 +223,6 @@
  *	@return	reference to the newly intialized control
  */
 -(id) initWithCenterViewController: (UIViewController*) centerViewController {
-    NSAssert(centerViewController, @"Must provide a center view controller");
     if (self = [self initWithCenterViewController: centerViewController
                                leftViewController: nil
                               rightViewController: nil
@@ -260,6 +259,8 @@
 #pragma mark - Setters
 
 -(void) setCenterViewController:(UIViewController *)centerViewController {
+    NSAssert(centerViewController, @"Must provide a center view controller");
+
     if (_centerViewController) {
         [self removePeripheralViewController: _centerViewController];
     }

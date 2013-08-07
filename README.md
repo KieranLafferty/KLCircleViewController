@@ -31,6 +31,21 @@ Import the header file and declare your controller to subclass KLScrollViewContr
 	                                    	 rightViewController: right
 	                                        bottomViewController: bottom];
 
+To omit a view controller, pass in nill as follows:
+
+	[[KLCircleViewController alloc] initWithCenterViewController: center
+	                                          leftViewController: left
+	                                    	 rightViewController: nil
+	                                        bottomViewController: nil];										
+
+Note: Center view controller can never be nil as it is 	default
+
+To invalidate/remove a view controller after instantiation set the property to nil
+
+	[self.circleViewController setLeftViewController: nil];		
+
+Note: As mentioned above, this can not be done for the center view controller as it is required.
+
 ## Registering for callbacks ##
 
 Callbacks are all handled by blocks. 
