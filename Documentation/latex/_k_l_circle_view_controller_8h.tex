@@ -1,0 +1,115 @@
+\hypertarget{_k_l_circle_view_controller_8h}{\section{/\-Users/\-Shared/\-K\-L\-Circle\-View\-Controller\-Demo/\-K\-L\-Circle\-View\-Controller/\-K\-L\-Circle\-View\-Controller/\-K\-L\-Circle\-View\-Controller.h File Reference}
+\label{_k_l_circle_view_controller_8h}\index{/\-Users/\-Shared/\-K\-L\-Circle\-View\-Controller\-Demo/\-K\-L\-Circle\-View\-Controller/\-K\-L\-Circle\-View\-Controller/\-K\-L\-Circle\-View\-Controller.\-h@{/\-Users/\-Shared/\-K\-L\-Circle\-View\-Controller\-Demo/\-K\-L\-Circle\-View\-Controller/\-K\-L\-Circle\-View\-Controller/\-K\-L\-Circle\-View\-Controller.\-h}}
+}
+{\ttfamily \#import $<$U\-I\-Kit/\-U\-I\-Kit.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_k_l_circle_view_controller}{K\-L\-Circle\-View\-Controller}
+\item 
+class \hyperlink{interface_k_l_direction_pan_gesture_recognizer}{K\-L\-Direction\-Pan\-Gesture\-Recognizer}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{_k_l_circle_view_controller_8h_a2bafdaa95ce52b9969631a6edee1d644}{K\-L\-Circle\-State}
+\item 
+typedef void($^\wedge$ \hyperlink{_k_l_circle_view_controller_8h_a6b6c03dccbb5f770d9f28331adff2ba8}{state\-Change\-Handler} )(\hyperlink{interface_k_l_circle_view_controller}{K\-L\-Circle\-View\-Controller} $\ast$circle\-View\-Controller, \hyperlink{_k_l_circle_view_controller_8h_a2bafdaa95ce52b9969631a6edee1d644}{K\-L\-Circle\-State} from\-State, \hyperlink{_k_l_circle_view_controller_8h_a2bafdaa95ce52b9969631a6edee1d644}{K\-L\-Circle\-State} to\-State)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba52a1d6b7e726a27bf023071df2e852be}{K\-L\-Circle\-State\-Center} = 1 $<$$<$ 1, 
+\hyperlink{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55baa1f22111b84b78f5f46e48e0bc45fb4e}{K\-L\-Circle\-State\-Left} = 1 $<$$<$ 2, 
+\hyperlink{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba0a97f0585979a0d33f9c8292a5c933b1}{K\-L\-Circle\-State\-Right} = 1 $<$$<$ 3, 
+\hyperlink{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55bab261c0126f2040c0404c22d978dcaba4}{K\-L\-Circle\-State\-Top} = 1 $<$$<$ 4, 
+\\*
+\hyperlink{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55bae80b33429191be6189696cc4a3d0a389}{K\-L\-Circle\-State\-Bottom} = 1 $<$$<$ 5
+ \}
+\item 
+enum \hyperlink{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77}{K\-L\-Toggle\-Direction} \{ \\*
+\hyperlink{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a0dc1a0bd586d25021a83e95100fef44f}{K\-L\-Toggle\-Direction\-None}, 
+\hyperlink{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a63aa0d004b493cc10d6f7eca54c82d13}{K\-L\-Toggle\-Direction\-Up}, 
+\hyperlink{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77aa0d2ec4e957cb0de6c4c6d4c297d300d}{K\-L\-Toggle\-Direction\-Down}, 
+\hyperlink{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a1f597b8aad3f5a8cca6253396b0e5753}{K\-L\-Toggle\-Direction\-Left}, 
+\\*
+\hyperlink{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a491cbd61fb7e196d8317d8e6b79b38d1}{K\-L\-Toggle\-Direction\-Right}
+ \}
+\item 
+enum \hyperlink{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15}{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Direction} \{ \hyperlink{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15a6795d22c77606e208f6529d3f66612a3}{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-None}, 
+\hyperlink{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15a04ff34cb194596fad1e7059f69294bf6}{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Vertical}, 
+\hyperlink{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15a6eab921d75aaf4ba0bb6201e03132c7b}{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Horizontal}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_k_l_circle_view_controller_8h_a2bafdaa95ce52b9969631a6edee1d644}{\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Circle\-State@{K\-L\-Circle\-State}}
+\index{K\-L\-Circle\-State@{K\-L\-Circle\-State}!KLCircleViewController.h@{K\-L\-Circle\-View\-Controller.\-h}}
+\subsubsection[{K\-L\-Circle\-State}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf K\-L\-Circle\-State}}}\label{_k_l_circle_view_controller_8h_a2bafdaa95ce52b9969631a6edee1d644}
+\hypertarget{_k_l_circle_view_controller_8h_a6b6c03dccbb5f770d9f28331adff2ba8}{\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!state\-Change\-Handler@{state\-Change\-Handler}}
+\index{state\-Change\-Handler@{state\-Change\-Handler}!KLCircleViewController.h@{K\-L\-Circle\-View\-Controller.\-h}}
+\subsubsection[{state\-Change\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ state\-Change\-Handler)({\bf K\-L\-Circle\-View\-Controller} $\ast$circle\-View\-Controller, {\bf K\-L\-Circle\-State} from\-State, {\bf K\-L\-Circle\-State} to\-State)}}\label{_k_l_circle_view_controller_8h_a6b6c03dccbb5f770d9f28331adff2ba8}
+Block type for handling state transitions
+
+
+\begin{DoxyParams}{Parameters}
+{\em circle\-View\-Controller} & Reference to the controller undergoing the state change \\
+\hline
+{\em from\-State} & State of the controller before the state change has occured \\
+\hline
+{\em to\-State} & State of the controller after the state change has occured \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55b}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{K\-L\-Circle\-State\-Center@{K\-L\-Circle\-State\-Center}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Circle\-State\-Center@{K\-L\-Circle\-State\-Center}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba52a1d6b7e726a27bf023071df2e852be}{K\-L\-Circle\-State\-Center}\label{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba52a1d6b7e726a27bf023071df2e852be}
+}]\index{K\-L\-Circle\-State\-Left@{K\-L\-Circle\-State\-Left}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Circle\-State\-Left@{K\-L\-Circle\-State\-Left}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55baa1f22111b84b78f5f46e48e0bc45fb4e}{K\-L\-Circle\-State\-Left}\label{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55baa1f22111b84b78f5f46e48e0bc45fb4e}
+}]\index{K\-L\-Circle\-State\-Right@{K\-L\-Circle\-State\-Right}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Circle\-State\-Right@{K\-L\-Circle\-State\-Right}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba0a97f0585979a0d33f9c8292a5c933b1}{K\-L\-Circle\-State\-Right}\label{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba0a97f0585979a0d33f9c8292a5c933b1}
+}]\index{K\-L\-Circle\-State\-Top@{K\-L\-Circle\-State\-Top}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Circle\-State\-Top@{K\-L\-Circle\-State\-Top}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55bab261c0126f2040c0404c22d978dcaba4}{K\-L\-Circle\-State\-Top}\label{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55bab261c0126f2040c0404c22d978dcaba4}
+}]\index{K\-L\-Circle\-State\-Bottom@{K\-L\-Circle\-State\-Bottom}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Circle\-State\-Bottom@{K\-L\-Circle\-State\-Bottom}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55bae80b33429191be6189696cc4a3d0a389}{K\-L\-Circle\-State\-Bottom}\label{_k_l_circle_view_controller_8h_a06fc87d81c62e9abb8790b6e5713c55bae80b33429191be6189696cc4a3d0a389}
+}]\end{description}
+\end{Desc}
+\hypertarget{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15}{\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Direction@{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Direction}}
+\index{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Direction@{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Direction}!KLCircleViewController.h@{K\-L\-Circle\-View\-Controller.\-h}}
+\subsubsection[{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Direction}}}\label{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-None@{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-None}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Direction\-Pan\-Gesture\-Recognizer\-None@{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-None}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15a6795d22c77606e208f6529d3f66612a3}{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-None}\label{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15a6795d22c77606e208f6529d3f66612a3}
+}]\index{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Vertical@{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Vertical}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Vertical@{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Vertical}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15a04ff34cb194596fad1e7059f69294bf6}{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Vertical}\label{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15a04ff34cb194596fad1e7059f69294bf6}
+}]\index{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Horizontal@{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Horizontal}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Horizontal@{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Horizontal}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15a6eab921d75aaf4ba0bb6201e03132c7b}{K\-L\-Direction\-Pan\-Gesture\-Recognizer\-Horizontal}\label{_k_l_circle_view_controller_8h_a04a1d827a9a8bdd5f9ece312e3954e15a6eab921d75aaf4ba0bb6201e03132c7b}
+}]\end{description}
+\end{Desc}
+\hypertarget{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77}{\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Toggle\-Direction@{K\-L\-Toggle\-Direction}}
+\index{K\-L\-Toggle\-Direction@{K\-L\-Toggle\-Direction}!KLCircleViewController.h@{K\-L\-Circle\-View\-Controller.\-h}}
+\subsubsection[{K\-L\-Toggle\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf K\-L\-Toggle\-Direction}}}\label{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{K\-L\-Toggle\-Direction\-None@{K\-L\-Toggle\-Direction\-None}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Toggle\-Direction\-None@{K\-L\-Toggle\-Direction\-None}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a0dc1a0bd586d25021a83e95100fef44f}{K\-L\-Toggle\-Direction\-None}\label{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a0dc1a0bd586d25021a83e95100fef44f}
+}]\index{K\-L\-Toggle\-Direction\-Up@{K\-L\-Toggle\-Direction\-Up}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Toggle\-Direction\-Up@{K\-L\-Toggle\-Direction\-Up}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a63aa0d004b493cc10d6f7eca54c82d13}{K\-L\-Toggle\-Direction\-Up}\label{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a63aa0d004b493cc10d6f7eca54c82d13}
+}]\index{K\-L\-Toggle\-Direction\-Down@{K\-L\-Toggle\-Direction\-Down}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Toggle\-Direction\-Down@{K\-L\-Toggle\-Direction\-Down}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77aa0d2ec4e957cb0de6c4c6d4c297d300d}{K\-L\-Toggle\-Direction\-Down}\label{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77aa0d2ec4e957cb0de6c4c6d4c297d300d}
+}]\index{K\-L\-Toggle\-Direction\-Left@{K\-L\-Toggle\-Direction\-Left}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Toggle\-Direction\-Left@{K\-L\-Toggle\-Direction\-Left}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a1f597b8aad3f5a8cca6253396b0e5753}{K\-L\-Toggle\-Direction\-Left}\label{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a1f597b8aad3f5a8cca6253396b0e5753}
+}]\index{K\-L\-Toggle\-Direction\-Right@{K\-L\-Toggle\-Direction\-Right}!K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}}\index{K\-L\-Circle\-View\-Controller.\-h@{K\-L\-Circle\-View\-Controller.\-h}!K\-L\-Toggle\-Direction\-Right@{K\-L\-Toggle\-Direction\-Right}}\item[{\em 
+\hypertarget{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a491cbd61fb7e196d8317d8e6b79b38d1}{K\-L\-Toggle\-Direction\-Right}\label{_k_l_circle_view_controller_8h_a0675c44c95f82a8b2c0706167b823b77a491cbd61fb7e196d8317d8e6b79b38d1}
+}]\end{description}
+\end{Desc}
