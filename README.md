@@ -52,7 +52,7 @@ Note: As mentioned above, this can not be done for the center view controller as
 ## Reference to KLCircleViewController from child View Controllers ##
 A category has been added to UIViewController that allows any UIViewController to access the KLCircleViewController from within the child. This reference will only exist for the span of time that the child is truly contained within the KLCircleViewController instance. If the KLCircleViewController removes the UIViewController then it can no longer be referenced and will return nil.
 
-	#import "KLCircleViewController.h"
+	#import <KLCircleViewController/KLCircleViewController.h>
 	...
 	KLCircleViewController circleController = self.circleController;
 	//Do whatever useful things you may need to do with this reference here
