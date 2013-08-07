@@ -9,8 +9,6 @@ Note: KLCircleViewController is intended for use with portrait orientation on iP
 
 Requires ARC
 
-*Source is dual licensed. Can be used freely without restriction on FREE apps, PAID apps require a license purchased from https://www.cocoacontrols.com/controls/KLCircleViewController*
-
 [Check out the Demo](http://www.youtube.com/watch?v=uorJfwpTzoI) *Excuse the graphics glitches and lag due to my slow computer.*
 
 
@@ -32,11 +30,6 @@ Import the header file and declare your controller to subclass KLScrollViewContr
 	                                          leftViewController: left
 	                                    	 rightViewController: right
 	                                        bottomViewController: bottom];
-
-OR, Import the header file and declare your controller to conform to KLCircleViewControllerDelegate and KLCircleViewControllerDataSrouce
-
-	#import <KLCircleViewController/KLCircleViewController.h>
-	@interface KLViewController : UIViewController <KLCircleViewControllerDataSource, KLCircleViewControllerDelegate>
 
 
 ## Contact ##
