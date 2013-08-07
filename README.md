@@ -9,7 +9,7 @@ Note: KLCircleViewController is intended for use with portrait orientation on iP
 
 Requires ARC
 
-[Check out the Demo](http://www.youtube.com/watch?v=uorJfwpTzoI) *Excuse the graphics glitches and lag due to my slow computer.*
+[Check out the Demo](https://www.youtube.com/watch?v=2F1nQRvExZs) *Excuse the graphics glitches and lag due to my slow computer.*
 
 
 ## Installation ##
