@@ -54,7 +54,7 @@ A category has been added to UIViewController that allows any UIViewController t
 
 	#import <KLCircleViewController/KLCircleViewController.h>
 	...
-	KLCircleViewController circleController = self.circleController;
+	KLCircleViewController* circleController = self.circleController;
 	//Do whatever useful things you may need to do with this reference here
 
 ## Registering for callbacks ##
