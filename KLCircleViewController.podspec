@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     	= "https://github.com/KieranLafferty/KLCircleViewController"
   s.license      	= 'Apache 2.0'
   s.author       	= { "Kieran Lafferty" => "kieran.lafferty@gmail.com"}
-  s.source       	= { :git => "https://github.com/KieranLafferty/KLCircleViewController", :tag => "1.0" }
+  s.source       	= { :git => "https://github.com/KieranLafferty/KLCircleViewController.git", :tag => "1.0" }
   s.source_files 	= 'KLCircleViewController/KLCircleViewController/*.{h,m}'
   s.requires_arc 	= true
 end
