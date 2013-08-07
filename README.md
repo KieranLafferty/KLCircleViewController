@@ -19,7 +19,9 @@ Requires ARC
 	3. Under Build on your Xcode Project file add 'libKLCircleViewController' & QuartzCore.framework under Link Binary With Libraries
 	4. Include #import <KLCircleViewController/KLCircleViewController.h> in any file you wish to use
 
-	
+Install via Cocoapods by adding the following line to your podfile
+
+		pod 'KLCircleViewController'
 ## Usage ##
 
 Import the header file and declare your controller to subclass KLScrollViewController
