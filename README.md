@@ -31,6 +31,23 @@ Import the header file and declare your controller to subclass KLScrollViewContr
 	                                    	 rightViewController: right
 	                                        bottomViewController: bottom];
 
+## Registering for callbacks ##
+
+Callbacks are all handled by blocks. 
+
+	[self.circleVC setWillTransitionState: ^(KLCircleViewController* circleViewController, KLCircleState fromState,
+	                                        KLCircleState toState) {
+												//Do something useful here
+	}];
+	[self.circleVC setDidTransitionState:^(KLCircleViewController* circleViewController, KLCircleState fromState,
+	                                      KLCircleState toState) {
+											  //Do something useful here
+	}];
+	
+	
+## Documentation ##
+
+Use Doxygen (http://www.stack.nl/~dimitri/doxygen/download.html) to generate the documentation using the doxygen file in the root of the repository.
 
 ## Contact ##
 
